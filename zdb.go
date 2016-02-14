@@ -11,7 +11,7 @@ type ZDB struct {
 	*sql.DB
 }
 
-func (zdb* ZDB) Set(db *sql.DB) {
+func (zdb *ZDB) Set(db *sql.DB) {
 	zdb.DB = db
 }
 
@@ -27,7 +27,7 @@ func (zdb *ZDB) Close() {
 	if zdb.DB == nil {
 		return
 	}
-	zdb.DB.Close()	
+	zdb.DB.Close()
 }
 
 func (zdb *ZDB) SetMaxIdleConns(n int) {
